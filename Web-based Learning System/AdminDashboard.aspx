@@ -78,78 +78,81 @@ a {
         </div>
 
         --%>
-    <div class="pt-5 text-center bg-light">
-      <h2 class="section-header m-0"><b>Admin Dashboard</b></h2>
-    </div>
-    <div class="container-fluid p-5 bg-light">
-      <div class="row align-items-center justify-content-center">
-        <div class="card col-sm-6 col-md-4 mt-5 boxShadow py-2">
-          <img
-            src="images/course.png"
-            class="mx-auto w-25 h-50"
-            alt="Card image cap"
-            height="200px"
-            width="80%"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Course Management</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="CourseManagement.aspx" class="btn btn-block btn-primary font-weight-bold">Manage</a>
-          </div>
+    <div style="background:url('images/bg.png');background-repeat:no-repeat;background-size:cover">
+        <div class="pt-5 text-center text-white">
+          <h2 class="section-header m-0"><b>Admin Dashboard</b></h2>
         </div>
-        <div class="card col-sm-6 col-md-4 ml-sm-3 mt-5 py-2 boxShadow">
-          <img
-            class="mx-auto w-25 h-50"
-            alt="Card image cap"
-            height="200px"
-            width="80%"
-            src="images/user_management.png"
-          />
-          <div class="card-body">
-            <h5 class="card-title">User Management</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="UserManagement.aspx" class="btn btn-block btn-block btn-primary font-weight-bold">Manage</a>
-          </div>
-        </div>
-        <div class="card col-sm-6 col-md-4 ml-sm-3 mt-5 py-2 boxShadow">
-          <img
-            class="mx-auto w-25 h-50"
-            alt="Card image cap"
-            height="200px"
-            width="80%%"
-            src="images/asdasda.png"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Tutor Management</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="Instructor.aspx" class="btn btn-block btn-primary font-weight-bold">Manage</a>
-          </div>
-        </div>
-        <div class="card col-sm-6 col-md-4 ml-sm-3 mt-5 py-2 boxShadow">
-          <img
-            src="images/messagesreal.png"
-            class="mx-auto w-25 h-50"
-            alt="Card image cap"
-            "
-          />
-          <div class="card-body">
-            <h5 class="card-title">Message Management</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="ViewMessages.aspx" class="btn btn-block btn-primary font-weight-bold">Manage</a>
-          </div>
-        </div>
+        <div class="container p-5">
+          <div class="row align-items-center justify-content-center">
+            <div class="card col-sm-6 col-md-4 mt-5 boxShadow py-2 bg-info">
+              <img
+                src="images/course.png"
+                class="mx-auto w-25 h-50"
+                alt="Card image cap"
+                height="200px"
+                width="80%"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Course Management</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                </p>
+                <a href="CourseManagement.aspx" class="btn btn-block btn-primary font-weight-bold">Manage</a>
               </div>
+            </div>
+            <div class="card col-sm-6 col-md-4 ml-sm-3 mt-5 py-2 boxShadow bg-warning">
+              <img
+                class="mx-auto w-25 h-50"
+                alt="Card image cap"
+                height="200px"
+                width="80%"
+                src="images/user_management.png"
+              />
+              <div class="card-body">
+                <h5 class="card-title">User Management</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                </p>
+                <a href="UserManagement.aspx" class="btn btn-block btn-block btn-primary font-weight-bold">Manage</a>
+              </div>
+            </div>
+            <div class="card col-sm-6 col-md-4 ml-sm-3 mt-5 py-2 boxShadow bg-success">
+              <img
+                class="mx-auto w-25 h-50"
+                alt="Card image cap"
+                height="200px"
+                width="80%%"
+                src="images/asdasda.png"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tutor Management</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                </p>
+                <a href="Instructor.aspx" class="btn btn-block btn-primary font-weight-bold">Manage</a>
+              </div>
+            </div>
+            <div class="card col-sm-6 col-md-4 ml-sm-3 mt-5 py-2 boxShadow bg-danger">
+              <img
+                src="images/messagesreal.png"
+                class="mx-auto w-25 h-50"
+                alt="Card image cap"
+                "
+              />
+              <div class="card-body">
+                <h5 class="card-title">Message Management</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                </p>
+                <a href="ViewMessages.aspx" class="btn btn-block btn-primary font-weight-bold">Manage</a>
+              </div>
+            </div>
+                  </div>
+        </div>
     </div>
+    
 </asp:Content>

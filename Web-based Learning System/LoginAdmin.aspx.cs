@@ -17,6 +17,7 @@ namespace Web_based_Learning_System
         //admin login
         protected void btnLogin_Click(object sender, EventArgs e)
         {
+            Response.Redirect("/loginuser");
             try
             {
                 MySqlConnection con = new MySqlConnection(strcon);
@@ -25,20 +26,7 @@ namespace Web_based_Learning_System
                     con.Open();
 
                 }
-                MySqlCommand cmd = new MySqlCommand("SELECT * FROM admin_master_table where username='" + txtUsername.Text.Trim() + "' AND password='" + txtPassword.Text.Trim() + "'", con);
-                MySqlDataReader dr = cmd.ExecuteReader();
-                if (dr.HasRows)
-                {
-                    while (dr.Read())
-                    {
-                        Response.Write("<script>alert('" + dr.GetValue(1).ToString() + "');</script>");
-                        Session["username"] = dr.GetValue(1).ToString();
-                        Session["full_name"] = dr.GetValue(0).ToString();
-                        Session["role"] = "admin";
-                    
-                    }
-                    Response.Redirect("AdminDashboard.aspx");
-                }
+
                 else
                 {
                     Response.Write("<script>alert('Invalid Credentials');</script>");

@@ -26,7 +26,7 @@ namespace Web_based_Learning_System
             {
 
                 Response.Write("<script>alert('Session Expired Login Again');</script>");
-                Response.Redirect("loginadmin.aspx");
+                Response.Redirect("loginuser.aspx");
 
             }
 
@@ -130,10 +130,12 @@ namespace Web_based_Learning_System
                 {
                     while (dr.Read())
                     {
-                        txtUserId.Text = dr.GetValue(1).ToString();
-                        txtFullName.Text = dr.GetValue(0).ToString();
-                        txtEmail.Text = dr.GetValue(1).ToString();
+                        txtUserId.Text = dr.GetValue(2).ToString();
+                        txtFullName.Text = dr.GetValue(1).ToString();
+                        txtEmail.Text = dr.GetValue(2).ToString();
                     
+
+
                     }
 
                 }

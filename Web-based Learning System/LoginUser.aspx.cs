@@ -29,6 +29,21 @@ namespace Web_based_Learning_System
                     con.Open();
 
                 }
+                MySqlCommand cmd_admin = new MySqlCommand("SELECT * FROM admin_master_table where username='" + txtEmail.Text.Trim() + "' AND password='" + txtPassword.Text.Trim() + "'", con);
+                MySqlDataReader dr_admin = cmd_admin.ExecuteReader();
+                if (dr_admin.HasRows)
+                {
+                    while (dr_admin.Read())
+                    {
+                        Response.Write("<script>alert('" + dr_admin.GetValue(1).ToString() + "');</script>");
+                        Session["username"] = dr_admin.GetValue(1).ToString();
+                        Session["full_name"] = dr_admin.GetValue(0).ToString();
+                        Session["role"] = "admin";
+
+                    }
+                    Response.Redirect("AdminDashboard.aspx");
+                }
+                dr_admin.Close();
                 MySqlCommand cmd = new MySqlCommand("SELECT * FROM user_master_table where email_id='" + txtEmail.Text.Trim() + "' AND password='" + hc.PassHash(txtPassword.Text.Trim()) + "'", con);
                 MySqlDataReader dr = cmd.ExecuteReader();
                 if (dr.HasRows)

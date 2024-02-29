@@ -103,7 +103,6 @@
                                 <asp:BoundField DataField="full_name" HeaderText="full_name" SortExpression="full_name" />
                                 <asp:BoundField DataField="email_id" HeaderText="email_id" ReadOnly="True" SortExpression="email_id" />
                           
-                                <asp:BoundField DataField="phone" HeaderText="phone" SortExpression="phone" />
                             </Columns>
                          </asp:GridView>
 
@@ -117,6 +116,9 @@
             </div>
          </div>
       </div>
+         <div class="mt-5">
+             <a class="btn btn-primary rounded-pill active m-1" style="width:200px" href="AdminDashboard.aspx">Go to admin dashboard</a>
+         </div>
    </div>
 </asp:Content>
  
