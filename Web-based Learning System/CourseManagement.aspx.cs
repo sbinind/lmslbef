@@ -105,9 +105,10 @@ namespace Web_based_Learning_System
                     con.Open();
                 }
 
-                MySqlCommand cmd = new MySqlCommand("INSERT INTO course_master_table(course_name,language,instructor,category,lectures,upload_date,course_duration,course_details,course_img_link) values(@course_name,@language,@instructor,@category,@lectures,@upload_date,@course_duration,@course_details,@course_img_link)", con);
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO course_master_table(course_id, course_name,language,instructor,category,lectures,upload_date,course_duration,course_details,course_img_link) values(@course_id, @course_name,@language,@instructor,@category,@lectures,@upload_date,@course_duration,@course_details,@course_img_link)", con);
 
                 cmd.Parameters.AddWithValue("@course_name", txtCourseName.Text.Trim());
+                cmd.Parameters.AddWithValue("@course_id", txtCourseId.Text.Trim());
                 cmd.Parameters.AddWithValue("@language", ddlLanguage.SelectedItem.Value);
                 cmd.Parameters.AddWithValue("@instructor", DropDownList1.SelectedItem.Value);
                 cmd.Parameters.AddWithValue("@category", category);
