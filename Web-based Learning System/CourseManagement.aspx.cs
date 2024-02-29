@@ -109,7 +109,7 @@ namespace Web_based_Learning_System
 
                 cmd.Parameters.AddWithValue("@course_name", txtCourseName.Text.Trim());
                 cmd.Parameters.AddWithValue("@language", ddlLanguage.SelectedItem.Value);
-                cmd.Parameters.AddWithValue("@instructor", 1);
+                cmd.Parameters.AddWithValue("@instructor", DropDownList1.SelectedItem.Value);
                 cmd.Parameters.AddWithValue("@category", category);
                 cmd.Parameters.AddWithValue("@lectures", txtLectures.Text.Trim());
                 cmd.Parameters.AddWithValue("@upload_date", txtUploadDate.Text.Trim());
