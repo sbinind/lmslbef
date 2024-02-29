@@ -28,7 +28,7 @@ namespace Web_based_Learning_System
                 {
 
                     Response.Write("<script>alert('Session Expired Login Again');</script>");
-                    Response.Redirect("loginadmin.aspx");
+                    Response.Redirect("loginuser.aspx");
 
                 }
             }
@@ -36,7 +36,7 @@ namespace Web_based_Learning_System
             {
 
                 Response.Write("<script>alert('Session Expired Login Again');</script>");
-                Response.Redirect("loginadmin.aspx");
+                Response.Redirect("loginuser.aspx");
             }
            
         }

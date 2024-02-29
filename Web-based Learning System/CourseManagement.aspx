@@ -22,8 +22,8 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container-fluid">
-        <div class="row">
+    <div class="container-fluid" style="min-height:75vh;background:url('images/bg.png');background-repeat:no-repeat;background-size:cover">
+        <div class="row pt-5">
                         <div class="col-md-5">
 
                 <div class="card">
@@ -250,5 +250,6 @@
             </div>
                 </div>
         </div>
+
     </div>
 </asp:Content>

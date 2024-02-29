@@ -91,7 +91,9 @@
                         
                     </div>
 
-
+                         <div class="mt-5 pb-5">
+                            <a href="AdminDashboard.aspx" class="btn btn-primary rounded-pill active" style="width:200px">Go to admin</a>
+                        </div>
 
                 </div>
             </div>

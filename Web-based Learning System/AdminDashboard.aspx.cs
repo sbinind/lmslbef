@@ -13,10 +13,14 @@ namespace Web_based_Learning_System
         {
             try
             {
-                if (Session["role"].ToString() != "admin" || Session["username"] == null)
+                if (Session["role"] == null)
+                {
+                    Response.Redirect("userlogin.aspx");
+                }
+                if (Session["role"].ToString() != "admin")
                 {
                     Response.Write("<script>alert('Session Expired Login Again');</script>");
-                    Response.Redirect("loginadmin.aspx");
+                    Response.Redirect("loginuser.aspx");
                 }
                 else
                 {
@@ -31,7 +35,7 @@ namespace Web_based_Learning_System
             {
 
                 Response.Write("<script>alert('Session Expired Login Again');</script>");
-                Response.Redirect("loginadmin.aspx");
+                Response.Redirect("loginuser.aspx");
             }
 
         }
