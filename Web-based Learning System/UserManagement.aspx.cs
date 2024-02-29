@@ -124,17 +124,15 @@ namespace Web_based_Learning_System
                     con.Open();
 
                 }
-                MySqlCommand cmd = new MySqlCommand("select * from user_master_table where email_id='" + txtUserId.Text.Trim() + "'", con);
+                MySqlCommand cmd = new MySqlCommand("select email_id, full_name from user_master_table where email_id='" + txtUserId.Text.Trim() + "'", con);
                 MySqlDataReader dr = cmd.ExecuteReader();
                 if (dr.HasRows)
                 {
                     while (dr.Read())
                     {
-                        txtUserId.Text = dr.GetValue(2).ToString();
+                        txtUserId.Text = dr.GetValue(0).ToString();
                         txtFullName.Text = dr.GetValue(1).ToString();
-                        txtEmail.Text = dr.GetValue(2).ToString();
-                    
-
+                        txtEmail.Text = dr.GetValue(0).ToString();
 
                     }
 
